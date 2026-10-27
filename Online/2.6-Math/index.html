@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6</title>
+</head>
+<body>
+<!-- START OF MATH TEST -->
+<div class="test-container">
+    <h1>Math Assessment</h1>
+    
+    <!-- Name Field Section -->
+    <div class="student-info">
+        <label for="student-name"><strong>Name:</strong></label>
+        <input type="text" id="student-name" name="student_name" placeholder="Enter your full name">
+    </div>
+
+    <!-- Multiple Choice Questions Section -->
+    <h2 class="section-title">Multiple Choice Questions</h2>
+    <form id="math-test" method="post" action="/submit-test">
+        
+        <!-- Question 1 -->
+        <div class="question">
+            <span class="question-label">1.</span> What is the value of &pi; (pi) rounded to two decimal places?
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) 3.12</label>
+                <label><input type="radio" name="q1" value="b"> b) 3.14</label>
+                <label><input type="radio" name="q1" value="c"> c) 3.16</label>
+                <label><input type="radio" name="q1" value="d"> d) 3.18</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <span class="question-label">2.</span> Solve for x: 2x &plus; 5 = 15
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) x = 5</label>
+                <label><input type="radio" name="q2" value="b"> b) x = 10</label>
+                <label><input type="radio" name="q2" value="c"> c) x = 7.5</label>
+                <label><input type="radio" name="q2" value="d"> d) x = 2.5</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <span class="question-label">3.</span> Which symbol represents "greater than or equal to"?
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) &gt;</label>
+                <label><input type="radio" name="q3" value="b"> b) &lt;</label>
+                <label><input type="radio" name="q3" value="c"> c) &ge;</label>
+                <label><input type="radio" name="q3" value="d"> d) &le;</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <span class="question-label">4.</span> What is &radic;144?
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) 10</label>
+                <label><input type="radio" name="q4" value="b"> b) 11</label>
+                <label><input type="radio" name="q4" value="c"> c) 12</label>
+                <label><input type="radio" name="q4" value="d"> d) 14</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <span class="question-label">5.</span> In the equation y = mx &plus; b, what does &quot;m&quot; represent?
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) The y-intercept</label>
+                <label><input type="radio" name="q5" value="b"> b) The slope</label>
+                <label><input type="radio" name="q5" value="c"> c) The variable</label>
+                <label><input type="radio" name="q5" value="d"> d) The constant</label>
+            </div>
+        </div>
+
+        <!-- Word Problems Section -->
+        <h2 class="section-title">Word Problems</h2>
+
+        <!-- Word Problem 1 -->
+        <div class="question word-problem">
+            <span class="question-label">6.</span> Sarah has 5 dozen apples. She gives 18 apples to her friend and then buys 24 more. How many apples does she have now?
+            <br><br>
+            <label>Answer: <input type="number" name="wp1" step="0.01"></label>
+        </div>
+
+        <!-- Word Problem 2 -->
+        <div class="question word-problem">
+            <span class="question-label">7.</span> A rectangle has a length of 12 cm and a width of 8 cm. What is the area of the rectangle? (Include units: sq cm)
+            <br><br>
+            <label>Answer: <input type="text" name="wp2"></label>
+        </div>
+
+        <!-- Word Problem 3 -->
+        <div class="question word-problem">
+            <span class="question-label">8.</span> The sum of three consecutive integers is 72. What is the smallest of these integers?
+            <br><br>
+            <label>Answer: <input type="number" name="wp3"></label>
+        </div>
+
+        <!-- Word Problem 4 -->
+        <div class="question word-problem">
+            <span class="question-label">9.</span> If a car travels at a speed of 65 miles per hour, how far will it travel in 3&frac12; hours?
+            <br><br>
+            <label>Answer: <input type="number" name="wp4" step="0.01"></label>
+        </div>
+
+        <!-- Word Problem 5 -->
+        <div class="question word-problem">
+            <span class="question-label">10.</span> In a right triangle, one leg measures 3 inches and the other leg measures 4 inches. Using the Pythagorean theorem (a&sup2; &plus; b&sup2; = c&sup2;), what is the length of the hypotenuse?
+            <br><br>
+            <label>Answer: <input type="number" name="wp5" step="0.01"></label>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Test">
+    </form>
+</div>
+<!-- END OF MATH TEST -->
+</body>
+</html>
